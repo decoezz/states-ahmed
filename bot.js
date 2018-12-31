@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "C";
-var adminprefix = "C"
+var prefix = "M";
+var adminprefix = "M"
 
-const developers = ["330834906781450240","id"]
+const developers = ["314316938446897153","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -38,4 +38,4 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 });
 
 
-client.login(process.env.TOKEN);// ·«  €Ì— ›ÌÂ« ‘Ì¡
+client.login(process.env.TOKEN);// √°√á √ä√õ√≠√ë √ù√≠√•√á √î√≠√Å
